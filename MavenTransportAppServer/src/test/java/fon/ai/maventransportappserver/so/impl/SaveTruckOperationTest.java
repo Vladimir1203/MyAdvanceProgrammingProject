@@ -39,12 +39,7 @@ public class SaveTruckOperationTest extends AbstractGenericOperationTest{
     
     @After
     public void tearDown() { //ne znaci rollback, tako da ako jednom unesem sa jednim ID-em, sledeci put test ne prolazi
-                            // a nemam delete opciju za ovu klasu!
-        try {
-            so.db.rollback();
-        } catch (Exception ex) {
-            Logger.getLogger(SaveTruckOperationTest.class.getName()).log(Level.SEVERE, null, ex);
-        }
+ 
     }
 
     /**

@@ -173,7 +173,7 @@ public class FConfigurations extends javax.swing.JFrame {
         String url = "jdbc:mysql://"+address+":"+port+"/"+database;
 
         try {
-            FileInputStream in = new FileInputStream("src\\\\database\\\\databaseProp.properties");
+            FileInputStream in = new FileInputStream("src\\main\\java\\fon\\ai\\maventransportappserver\\databases\\databaseProp.properties");
             Properties props = new Properties();
             props.load(in);
             in.close();
@@ -218,7 +218,7 @@ public class FConfigurations extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void fillForm() throws FileNotFoundException, IOException {   
-        FileInputStream in = new FileInputStream("src\\database\\databaseProp.properties");
+        FileInputStream in = new FileInputStream("src\\main\\java\\fon\\ai\\maventransportappserver\\databases\\databaseProp.properties");
         Properties props = new Properties();
         props.load(in);
 

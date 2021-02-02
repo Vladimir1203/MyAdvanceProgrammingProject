@@ -38,7 +38,7 @@ public class TakeDriveByIDOperationTest extends AbstractGenericOperationTest{
         Truck truck = new Truck("AUTOMATIC", "daf", 1995, "RA013CD", 8800, "K");
         Trailer trailer = new Trailer(VehicleType.CIRADA, 22000, "SMITZ", 1995, "AA447BG", 7500, "P");
         Driver driver = new Driver(12345678, "Vlada", "Vladic");
-        entity = new Drive(2, new Date(), 500, trailer , truck, driver);
+        entity = new Drive(4, new Date(), 500, trailer , truck, driver);
         so = new TakeDriveByIDOperation();
         so.db.openConnection();
     }
